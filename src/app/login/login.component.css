@@ -1,0 +1,137 @@
+.left-contant {
+  background: url('../../assets/images/b1.jpg') no-repeat 0 0;
+  background-position: cover;
+  height: 100vh;
+  display: none;
+}
+
+.right-contant {
+  background: rgb(49, 195, 224);
+  background: #fff;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0 30px;
+}
+
+.login-container .login-title {
+  font-size: 1.800em;
+  color: rgb(49, 195, 224);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.login-container .login-input {
+  background-color: #dedddd;
+  border-radius: 3px;
+  border: 1px solid #b1afaf;
+  position: relative;
+  display: block;
+  padding-left: 32px;
+}
+
+.login-container .form-group .control-content {
+  position: relative;
+}
+
+.login-container .form-group .error {
+  color: #f52c2c;
+}
+
+.login-container p.place-holder {
+  margin: 15px 0 25px;
+  font-size: 1em;
+  color: #7e7d7d;
+  text-align: center;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  z-index: 2;
+  display: block;
+  height: 28px;
+  transform: translateY(-50%);
+}
+
+.signbtn-container {
+  text-align: center;
+}
+
+.signbtn {
+  background-color: rgba(49, 195, 224, 1);
+  border-radius: 20px;
+  border-color: rgba(49, 195, 224, 1);
+  padding: 7px 40px;
+  line-height: normal;
+  height: auto;
+  vertical-align: top;
+  text-align: center;
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.social-container a {
+  display: inline-block;
+  margin: 0 6px;
+  height: 35px;
+  width: 35px;
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.social-container a.fb-icon {
+  background-image: url('../../assets/icons/facebook.svg');
+}
+
+.social-container a.tw-icon {
+  background-image: url('../../assets/icons/twitter.svg');
+}
+
+.social-container a.go-icon {
+  background-image: url('../../assets/icons/pinterest.svg');
+}
+
+
+@media screen and (min-device-width: 500px) and (max-device-width: 768px) {
+  .left-contant {
+    display: none;
+  }
+  .login-container {
+    padding: 0 20px;
+    justify-content: top;
+  }
+
+
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  .left-contant {
+    display: block;
+
+  }
+
+  .login-container {
+    padding: 0 20px;
+  }
+}
+
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1200px) {
+  .left-contant {
+    display: block;
+  }
+}
+
